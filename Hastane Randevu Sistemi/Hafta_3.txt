@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+	 background-color:#DEB887;
+}
+#container {
+	 margin:auto;
+     width: 60%;
+     height: 600px;
+     background-color:#F5F5DC;
+}
+
+#header {
+    width: 400px;
+    height: 60px;
+    background-color:#E9967A;
+	margin-right:auto;
+	margin-left:auto;
+	text-align:center;
+	margin-bottom:15px;
+	border-radius:15px;
+	padding-top:0.1%;
+	
+}
+
+#content {
+    width: 500px;
+    height: 450px;
+	margin:auto;
+	border-radius:15px;
+	text-align:center;
+    background-color:#FFE4C4;
+}
+
+
+</style>
+<script>
+alert("Hastanemize Hoş Geldiniz");
+</script>
+<div id="container">
+  <div id="header">
+	<p><span style="font-size:30px;padding-top:30px;">Hastanemiz Randevu Sistemi</span></p>
+  </div>
+
+  <div id="content">
+  <form action="#">
+        <label for="ad" >Adınız Soyadınız</label><br>
+        <input type="text" id=" ad" name="AD"><br></input>
+<br>
+        <label for="tc" >Tc Kimlik Numaranız</label><br>
+        <input type="number" id="tc" name="TC"></input>
+<br>
+<br>
+		<label for="tel" >Telefon Numaranız</label><br>
+        <input type="number" id="tel" name="TEL"></input>
+<br>
+<br>
+		<label for="bolumler" >Bölümler</label><br>
+        <select id="bolumler" name="BOLUMLER" size="4">
+            <option value="unn" selected >Bölüm Seçiniz</option>
+            <option value="1" >Çocuk Sağlığı ve Hastalıkları</option>
+            <option value="2">Kulak Burun Boğaz</option>
+            <option value="3">Fizik Tedavi ve Rehabilitasyon</option>
+            <option value="4">Nöroloji</option>
+			<option value="5">Nefroloji</option>
+			<option value="6">Dahiliye</option>
+			<option value="7">Göz Hastalıkları</option>
+			<option value="8">Kardiyoloji</option>
+			<option value="9">Ortopedi</option>
+        </select><br>
+			<p>Tarih Seçiniz</p>
+			<input type="date"><br>
+			<input type="time"><br>
+			
+		<script>
+			
+		const randevuol =()=> {
+		alert("Randevunuz Oluşturuldu");
+		}
+		</script>
+		<br>
+		<br>
+		<button onClick="randevuol()">Randevu Al</button>
+		
+</div>
+    </form>
+
+  </div>	
+</div>
+</head>
+</html>
